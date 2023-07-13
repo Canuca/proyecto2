@@ -1,0 +1,171 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+body{
+    padding-top: 90px; 
+    font-family: 'Lato', sans-serif;
+    background-color: #fbfbfb; 
+    color: #0f0f0f; 
+    font-size: 18px; 
+    line-height: 1.2; 
+    text-align: center; 
+}
+
+header{ 
+    display: flex; 
+    background-color: #fbfbfb; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    justify-content: space-between; 
+    height: 90px; 
+    padding: 15px;
+    align-items: center; 
+    position: fixed; 
+    border-bottom-style: groove;
+}
+
+section{
+    min-height: 100vh;
+} 
+
+h1{
+    font-size: 36px; 
+    font-weight: bold;
+} 
+h2{
+    font-size: 28px; 
+    font-weight: bold;
+} 
+
+footer{
+    background-color: #af599e; 
+    font-size: 16px; 
+    color: #fbfbfb; 
+    height: 90px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+#foto img{
+    max-width: 400px; 
+    border-radius: 50%; 
+    width:80%; 
+    margin-top: 20px;
+} 
+
+#inicio{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+#inicio a{
+    background-color: #af599e; 
+    color: #fbfbfb; 
+    font-size: 20px; 
+    padding: 20px; 
+    border-radius: 40px; 
+    max-width: 300px;
+}
+
+#hablemos{
+    background-color: rgba(175, 89, 158, 0.3);
+    padding: 10px; 
+    border-radius: 20px; 
+    margin: 10px;
+}
+
+#contactos img{
+    max-width: 80px;
+} 
+
+#logo{
+    font-size: x-large;
+    color: #e12047;
+}
+
+#contactos{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+#redes{
+    display:flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 50px;
+}
+
+#menu{
+    display: flex; 
+    width: 100%;
+} 
+
+.menu-item{
+    margin: 15px;
+}
