@@ -93,7 +93,7 @@ h2{
 } 
 
 footer{
-    background-color: #af599e; 
+    background-color: #34b81ade; 
     font-size: 16px; 
     color: #fbfbfb; 
     height: 90px; 
@@ -124,7 +124,7 @@ p{
 }
 
 #inicio a{
-    background-color: #af599e; 
+    background-color: #294b07; 
     color: #fbfbfb; 
     font-size: 20px; 
     padding: 20px; 
@@ -133,7 +133,7 @@ p{
 }
 
 #hablemos{
-    background-color: rgba(175, 89, 158, 0.3);
+    background-color: rgba(82, 232, 87, 0.3);
     padding: 10px; 
     border-radius: 20px; 
     margin: 10px;
@@ -144,8 +144,9 @@ p{
 } 
 
 #logo{
-    font-size: x-large;
-    color: #e12047;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    color: #28d705de;
 }
 
 #contactos{
@@ -162,10 +163,56 @@ p{
 }
 
 #menu{
-    display: flex; 
+    display: none; 
     width: 100%;
 } 
 
-.menu-item{
-    margin: 15px;
+#menu_desplegable{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
+.listabtn{
+    font-size: 50px;
+}
+
+.lista_desplegable:hover .listabtn{
+    background-color: #63c17f;
+}
+
+.lista_desplegable{
+    display: inline-block;
+}
+
+.menu-lista{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: auto;
+    right: 10px;
+}
+
+.menu-lista a{
+    color: #0f0f0f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-lista a:hover {
+    background-color: #f1f1f1;
+}
+
+.lista_desplegable:hover .menu-lista{
+    display: block;
+}
+
+
+/*.menu-item{
+    margin: 15px;
+}*/
