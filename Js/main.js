@@ -16,8 +16,6 @@ const reproductorBtn = document.querySelector('#activar_video');
         cerrarVideo.style.display = 'unset';
         const fondoVideo = document.querySelector('.fondo_video');
         fondoVideo.style.display = 'unset';
-
-                       
     });
 
 
@@ -34,7 +32,6 @@ const cerrarBoton2 = document.querySelector('.btn2');
 cerrarBoton2.addEventListener('click', function(){
     const cerrarLista2 = document.querySelector('.menu-lista');
     cerrarLista2.style.display ='none';
-
 });
 
 const activarLista = document.querySelector('.listabtn');
@@ -89,6 +86,7 @@ function crearHTMLLinksRelacionados(link){
 
     return listLink;
 };
+
 const listaLinks = document.querySelector('#links_relacionados');
 
 linkRelacionados.forEach(function(link){
