@@ -48,7 +48,7 @@ activarLista.addEventListener('click', function(){
 let linkRelacionados = [
     {
         nombre:'Universidad Central de Venezuela',
-        img:'http://www.ucv.ve/fileadmin/templates/core/img/ucv.png',
+        img:'https://upload.wikimedia.org/wikipedia/commons/f/f4/Logo_Universidad_Central_de_Venezuela.svg',
         url:'http://www.ucv.ve/organizacion/facultades/facultad-de-agronomia-ucv.html',
     },
     {
