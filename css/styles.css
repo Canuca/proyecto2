@@ -338,6 +338,7 @@ h4{
         flex-wrap: wrap;
     }
     h3{
+        display: unset;
         font-size: 16px;
     }
    
