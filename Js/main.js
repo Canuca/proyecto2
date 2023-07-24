@@ -41,10 +41,6 @@ activarLista.addEventListener('click', function(){
     abrirLista.style.display = 'block';
 })
 
-
-
-
-
 let linkRelacionados = [
     {
         nombre:'Universidad Central de Venezuela',

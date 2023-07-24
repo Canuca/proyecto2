@@ -232,7 +232,9 @@ p{
     display: none;
     position: absolute;
     z-index: 2; 
-      
+    max-width: 400px;
+    margin: auto;
+    transform: rotate(90deg);  
 }
 #botones{
     display:flex;
@@ -290,8 +292,6 @@ h4{
     font-size: 12px;
 }
 
-
-
 @media (min-width: 768px){
     #foto img{
         max-width: 400px;
@@ -341,8 +341,12 @@ h4{
         display: unset;
         font-size: 16px;
     }
-   
+    .video_presentacion{
+        max-width: 500px;
+        transform: rotate(360deg);  
+    }
 }
+  
 @media (min-width: 1024px){
     #foto img{
         max-width: 500px;
@@ -363,4 +367,5 @@ h4{
     #logo{
         font-size: 50px;
     }
+  
 }
