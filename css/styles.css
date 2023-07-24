@@ -187,7 +187,7 @@ p{
     font-size: 50px;
 }
 
-.lista_desplegable:hover .listabtn{
+.listabtn:hover{
     background-color: #63c17f;
     border-radius: 25%;
     transition: background-color 0.3s;
@@ -268,9 +268,7 @@ p{
 }
 
 #links_relacionados{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: none;
 }
 
 #links_relacionados img{
@@ -285,7 +283,8 @@ p{
 }
 
 h3{
-    font-size: 16px;
+    display: none;
+   
 }
 h4{
     font-size: 12px;
@@ -332,6 +331,14 @@ h4{
     }
     #logo{
         font-size: 40px;
+    }
+    #links_relacionados{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    h3{
+        font-size: 16px;
     }
    
 }
