@@ -38,7 +38,10 @@ const activarLista = document.querySelector('.listabtn');
 
 activarLista.addEventListener('click', function(){
     const abrirLista = document.querySelector('.menu-lista');
-    abrirLista.style.display = 'block';
+    if (abrirLista.style.display === 'none'){
+        abrirLista.style.display = 'block';
+    } else {abrirLista.style.display ='none';
+    }
 })
 
 let linkRelacionados = [
@@ -89,3 +92,4 @@ linkRelacionados.forEach(function(link){
     let linkListRelacionado = crearHTMLLinksRelacionados(link);
     listaLinks.appendChild(linkListRelacionado);
 });
+
